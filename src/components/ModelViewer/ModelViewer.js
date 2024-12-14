@@ -20,10 +20,8 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
     borderRadius: 15,
   };
   
-  // Accessing product for full screen start
   const model = useRef();
 
-  // Accessing varient selections element
   const varient = useRef(null);
 
   console.log(item)
@@ -33,7 +31,6 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
       model.current.requestFullscreen();
     } else if (document.exitFullscreen) document.exitFullscreen();
   }
-  // Full screen code end
 
 
   const handleAnnotateClick = (annotation) => {

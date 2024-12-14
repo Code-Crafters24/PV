@@ -1,14 +1,40 @@
-
+import OfficeChair from "../assets/models/OfficeChair.glb";
+import OfficeChairUsdz from "../assets/models/OfficeChair.usdz";
 import car from "../assets/models/car.glb";
 import ioscar from "../assets/models/car.usdz";
 import car1 from "../assets/models/Car1.glb";
 import ioscar1 from "../assets/models/Car1.usdz";
-
+import sheenchair from "../assets/models/sheenchair.glb";
+import ioschair from "../assets/models/sheenchair.usdz";
 
 const productItems = [
-
   {
     id: 1,
+    name: "Sheen Chair",
+    modelSrc: sheenchair,
+    iOSSrc: ioschair,
+    category: "Furniture",
+    color: "Orange",
+    annotations: [
+      {
+        title: "comfortable-back",
+        slot: "hotspot-1",
+        position: "0.011597651675006926m 0.5744572599492905m -0.1383899854988515m",
+        normal: "0.028332494851243895m 0.2137467602998606m 0.9764781575625839m",
+        orbit: "10.89188deg 119.9775deg 0.03543022m",
+        target: "-0.1053838m 0.01610652m 0.1076345m"
+      }, {
+        title: "comfortable-seat",
+        slot: "hotspot-2",
+        position: "0.008754174027053235m 0.3513235856998005m 0.1658749505478343m",
+        normal: "-0.30988561688489596m 0.9507625837296717m -0.004627507703580716m",
+        orbit: "10.89188deg 119.9775deg 0.03543022m",
+        target: "-0.1053838m 0.01610652m 0.1076345m"
+      },
+    ]
+  },
+  {
+    id: 2,
     name: "Car",
     modelSrc: car,
     iOSSrc: ioscar,
@@ -33,7 +59,33 @@ const productItems = [
     ]
   },
   {
-    id: 2,
+    id: 3,
+    name: "Office Chair",
+    modelSrc: OfficeChair,
+    iOSSrc: OfficeChairUsdz,
+    category: "Furniture",
+    color: "black",
+    annotations: [
+      {
+        title: "comfortable-back",
+        slot: "hotspot-1",
+        position: "0.011597651675006926m 0.5744572599492905m -0.1383899854988515m",
+        normal: "0.028332494851243895m 0.2137467602998606m 0.9764781575625839m",
+        orbit: "10.89188deg 119.9775deg 0.03543022m",
+        target: "-0.1053838m 0.01610652m 0.1076345m"
+      }, {
+        title: "comfortable-seat",
+        slot: "hotspot-2",
+        position: "0.008754174027053235m 0.3513235856998005m 0.1658749505478343m",
+        normal: "-0.30988561688489596m 0.9507625837296717m -0.004627507703580716m",
+        orbit: "10.89188deg 119.9775deg 0.03543022m",
+        target: "-0.1053838m 0.01610652m 0.1076345m"
+      },
+    ]
+  },
+ 
+  {
+    id: 4,
     name: "Sport Car",
     modelSrc: car1,
     iOSSrc: ioscar1,
@@ -56,7 +108,7 @@ const productItems = [
         target: "-0.1053838m 0.01610652m 0.1076345m"
       },
     ]
-  },
+  }
   
 ];
 export default productItems;
